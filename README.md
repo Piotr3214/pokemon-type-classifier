@@ -1,35 +1,35 @@
 # 🛡️ Pokémon AI: Type Classifier
 
-Aplikacja webowa wykorzystująca uczenie maszynowe do przewidywania głównego typu Pokémona na podstawie jego statystyk bazowych.
+A web application that uses Machine Learning to predict a Pokémon's primary type based on its base statistics.
 
-## 🚀 O projekcie
-Projekt łączy analizę danych (Data Science) z praktycznym wdrożeniem modelu (Deployment). Model został wytrenowany na danych o Pokémonach z generacji 1-7, a następnie udostępniony w formie interaktywnej aplikacji webowej.
+## 🚀 About the Project
+This project combines Data Science analysis with practical Model Deployment. The model was trained on Pokémon data from Generations 1-7 and is made accessible through an interactive web interface built with Streamlit.
 
-## 📊 Analiza i Modelowanie
-W pliku `pokemon.py` znajduje się pełny proces badawczy:
-- **Preprocessing:** Czyszczenie danych, uzupełnianie brakujących wartości i inżynieria cech (np. obliczanie **BMI** oraz **Base Stat Total**).
-- **Analiza wizualna:** Wykorzystanie algorytmu **PCA** do zmapowania 18 typów na przestrzeń 2D oraz klasteryzacja **K-Means**.
-- **Modelowanie:** Porównanie wyników Regresji Logistycznej, Random Forest oraz Gradient Boosting.
-- **Ewaluacja:** Szczegółowa macierz pomyłek (Confusion Matrix) pokazująca, które typy są do siebie najbardziej podobne według statystyk.
+## 📊 Analysis & Modeling
+The `pokemon.ipynb` (or `pokemon.py`) file contains the complete research process:
+- **Preprocessing:** Data cleaning, handling missing values, and feature engineering (e.g., calculating **BMI** and **Base Stat Total**).
+- **Visual Analysis:** Using the **PCA** algorithm to map 18 types into 2D space and **K-Means** clustering to find patterns.
+- **Modeling:** Performance comparison of Logistic Regression, Random Forest, and Gradient Boosting.
+- **Evaluation:** A detailed **Confusion Matrix** showing which types are most similar according to their stats.
 
-## 🛠️ Technologie
+## 🛠️ Tech Stack
 - **Python 3.x**
-- **Streamlit**: Interfejs użytkownika.
-- **Scikit-learn**: Serce uczenia maszynowego (Random Forest).
-- **Pandas & Numpy**: Manipulacja danymi.
-- **Matplotlib & Seaborn**: Wizualizacje statystyczne.
-- **Joblib**: Serializacja modelu i skalerów.
+- **Streamlit**: User interface.
+- **Scikit-learn**: Machine Learning engine (Random Forest).
+- **Pandas & Numpy**: Data manipulation.
+- **Matplotlib & Seaborn**: Statistical visualizations.
+- **Joblib**: Model and scaler serialization.
 
-## 📂 Struktura plików
-- `app.py` – Kod źródłowy aplikacji Streamlit.
-- `pokemon.py` – Skrypt treningowy z pełną analizą danych.
-- `pokemon_model.pkl` – Wytrenowany model Random Forest.
-- `scaler.pkl` – Obiekt StandardScaler dopasowany do danych treningowych.
-- `label_encoder.pkl` – Mapowanie identyfikatorów na nazwy typów.
-- `features_list.pkl` – Lista cech wejściowych w odpowiedniej kolejności.
-- `requirements.txt` – Lista zależności niezbędnych do uruchomienia projektu.
+## 📂 File Structure
+- `app.py` – Main Streamlit application code.
+- `pokemon.ipynb` – Training script with full data analysis and visualizations.
+- `pokemon_model.pkl` – Trained Random Forest model.
+- `scaler.pkl` – StandardScaler object fitted to the training data.
+- `label_encoder.pkl` – Mapping of type IDs to type names.
+- `features_list.pkl` – List of input features in the correct order.
+- `requirements.txt` – List of dependencies required to run the project.
 
-## 📦 Instalacja i uruchomienie lokalne
-1. Sklonuj repozytorium:
+## 📦 Installation & Local Setup
+1. Clone the repository:
    ```bash
-   git clone [https://github.com/TWOJA-NAZWA-UZYTKOWNIKA/NAZWA-REPOZYTORIUM.git](https://github.com/TWOJA-NAZWA-UZYTKOWNIKA/NAZWA-REPOZYTORIUM.git)
+   git clone [https://github.com/Piotr3214/pokemon-type-classifier.git](https://github.com/Piotr3214/pokemon-type-classifier.git)
